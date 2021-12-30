@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Main {
+    
+	public static void main(String[] ags) {
+	    Scanner scanner = new Scanner(System.in);
+	    System.out.println("Введи число");
+	    int num = scanner.nextInt();
+	    switch(num){
+	        case 1 : 
+	            System.out.println("Секция номер: 1");
+	            break;
+	       case 2 : 
+	            System.out.println("Секция номер: 2");
+	            break;
+	       case 3 : 
+	            System.out.println("Секция номер: 3");
+	            break;
+	       case 4 : 
+	            System.out.println("Секция номер: 4");
+	            break;
+	       case 5 : 
+	            System.out.println("Секция номер: 5");
+	            break;   
+	       case 6 : 
+	            System.out.println("Секция номер: 6");
+	            break;
+	       case 7 : 
+	            System.out.println("Секция номер: 7");
+	            break;
+	       case 8 : 
+	            System.out.println("Секция номер: 8");
+	            break;
+	       case 9 : 
+	            System.out.println("Секция номер: 9");
+	            break;
+	       case 10 : 
+	            System.out.println("Секция номер: 10");
+	            break;
+	       case 11 : 
+	            System.out.println("Секция номер: 11");
+	            break;
+	       case 12 : 
+	            System.out.println("Секция номер: 12");
+	            break;
+	       case 13 : 
+	            System.out.println("Секция номер: 13");
+	            break;
+	       case 14 : 
+	            System.out.println("Секция номер: 14");
+	            break;
+	       case 15 : 
+	            System.out.println("Секция номер: 15");
+	            break;
+	       default:
+	            System.out.println("Ни одно из условий не подошло.");
+	       
+	    }
+    }
+}
