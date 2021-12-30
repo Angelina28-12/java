@@ -1,0 +1,402 @@
+import java.util.Scanner;
+
+public class Main {
+    
+	public static void main(String[] ags) {
+	    Scanner num = new Scanner(System.in);
+	    System.out.println("Введите число:");
+	    int n = num.nextInt();
+	 
+	    if (n < 0 & n > 2147483647) 
+        System.out.println("-");
+    
+        switch (n / 1000000000) {
+            case 1: 
+                System.out.print("один миллиард "); 
+                break;
+            case 2: 
+                System.out.print("два миллиарда "); 
+                break;
+        }
+    
+        switch ((n % 1000000000) / 100000000) {
+            case 1: 
+                System.out.print("сто "); 
+                break;
+            case 2: 
+                System.out.print("двести "); 
+                break;
+            case 3: 
+                System.out.print("триста "); 
+                break;
+            case 4: 
+                System.out.print("четыреста "); 
+                break;
+            case 5:
+                System.out.print("пятьсот "); 
+                break;
+            case 6: 
+                System.out.print("шестьсот "); 
+                break;
+            case 7: 
+                System.out.print("семьсот "); 
+                break;
+            case 8: 
+                System.out.print("восемьсот "); 
+                break;
+            case 9: 
+                System.out.print("девятьсот "); 
+                break;
+        }
+    
+        switch ((n % 100000000) / 10000000) {
+            case 1: 
+                System.out.print("десять "); 
+                break;
+            case 2: 
+                System.out.print("двадцать "); 
+                break;
+            case 3: 
+                System.out.print("тридцать "); 
+                break;
+            case 4: 
+                System.out.print("сорок "); 
+                break;
+            case 5: 
+                System.out.print("пятьдесят "); 
+                break;
+            case 6: 
+                System.out.print("шестьдесят "); 
+                break;
+            case 7: 
+                System.out.print("семьдесят "); 
+                break;
+            case 8: 
+                System.out.print("восемьдесят "); 
+                break;
+            case 9: 
+                System.out.print("девяносто "); 
+                break;
+        }
+    
+        if ( n % 100000000 >= 10000000 & n % 100000000 < 20000000) {
+            
+        switch ((n / 1000000) % 100) {
+            case 10: 
+                System.out.print("десять миллионов "); 
+                break;
+            case 11: 
+                System.out.print("одиннадцать миллионов "); 
+                break;
+            case 12: 
+                System.out.print("двенадцать миллионов "); 
+                break;
+            case 13: 
+                System.out.print("тринадцать миллионов "); 
+                break;
+            case 14: 
+                System.out.print("четырнадцать миллионов "); 
+                break;
+            case 15: 
+                System.out.print("пятнадцать миллионов "); 
+                break;
+            case 16: 
+                System.out.print("шестнадцать миллионов "); 
+                break;
+            case 17: 
+                System.out.print("семнадцать миллионов "); 
+                break;
+            case 18: 
+                System.out.print("восемнадцать миллионов "); 
+                break;
+            case 19: 
+                System.out.print("девятнадцать миллионов "); 
+                break;
+        }
+    }
+    
+        if ((n % 100000000) < 10000000 || (n % 100000000) > 19000000) {
+            
+        switch ((n % 10000000) / 1000000) {
+            case 1: 
+                System.out.print("один миллион ");
+                break;
+            case 2: 
+                System.out.print("два милиона ");
+                break;
+            case 3: 
+                System.out.print("три миллиона ");
+                break;
+            case 4:
+                System.out.print("четыре миллиона ");
+                break;
+            case 5: 
+                System.out.print("пять миллионов ");
+                break;
+            case 6: 
+                System.out.print("шесть миллионов ");
+                break;
+            case 7: 
+                System.out.print("семь миллионов ");
+                break;
+            case 8: 
+                System.out.print("восемь миллионов ");
+                break;
+            case 9: 
+                System.out.print("девять миллионов ");
+                break;
+        }
+    }
+    
+        switch ((n % 1000000) / 100000) {
+            case 1: 
+                System.out.print("сто "); 
+                break;
+            case 2: 
+                System.out.print("двести "); 
+                break;
+            case 3: 
+                System.out.print("триста "); 
+                break;
+            case 4: 
+                System.out.print("четыреста "); 
+                break;
+            case 5:
+                System.out.print("пятьсот "); 
+                break;
+            case 6: 
+                System.out.print("шестьсот "); 
+                break;
+            case 7: 
+                System.out.print("семьсот "); 
+                break;
+            case 8: 
+                System.out.print("восемьсот "); 
+                break;
+            case 9: 
+                System.out.print("девятьсот "); 
+                break;
+    }
+    
+        switch ((n % 100000) / 10000) {
+            case 2: 
+                System.out.print("двадцать "); 
+                break;
+            case 3: 
+                System.out.print("тридцать "); 
+                break;
+            case 4: 
+                System.out.print("сорок "); 
+                break;
+            case 5: 
+                System.out.print("пятьдесят "); 
+                break;
+            case 6: 
+                System.out.print("шестьдесят "); 
+                break;
+            case 7: 
+                System.out.print("семьдесят "); 
+                break;
+            case 8: 
+                System.out.print("восемьдесят "); 
+                break;
+            case 9: 
+                System.out.print("девяносто "); 
+                break;
+    }
+    
+        if (n % 1000 >= 10 & n % 1000 < 20) {
+            
+        switch (n % 100) {
+            case 10: 
+                System.out.print("десять "); 
+                break;
+            case 11: 
+                System.out.print("одиннадцать "); 
+                break;
+            case 12: 
+                System.out.print("двенадцать "); 
+                break;
+            case 13: 
+                System.out.print("тринадцать "); 
+                break;
+            case 14: 
+                System.out.print("четырнадцать "); 
+                break;
+            case 15: 
+                System.out.print("пятнадцать "); 
+                break;
+            case 16: 
+                System.out.print("шестнадцать "); 
+                break;
+            case 17:
+                System.out.print("семнадцать "); 
+                break;
+            case 18: 
+                System.out.print("восемнадцать "); 
+                break;
+            case 19: 
+                System.out.print("девятнадцать "); 
+                break;
+        }
+    }
+    
+        switch ((n % 10000 ) / 1000) {
+            case 1: 
+                System.out.print("одна тысяча "); 
+                break;
+            case 2:
+                System.out.print("две тысячи "); 
+                break;
+            case 3:
+                System.out.print("три тысячи "); 
+                break;
+            case 4: 
+                System.out.print("четыре тысячи "); 
+                break;
+            case 5:
+                System.out.print("пять тысяч "); 
+                break;
+            case 6: 
+                System.out.print("шесть тысяч "); 
+                break;
+            case 7: 
+                System.out.print("семь тысяч "); 
+                break;
+            case 8:
+                System.out.print("восемь тысяч "); 
+                break;
+            case 9:
+                System.out.print("девять тысяч "); 
+                break;
+    }
+
+        switch ((n % 1000) / 100) {
+            case 1: 
+                System.out.print("сто "); 
+                break;
+            case 2: 
+                System.out.print("двести "); 
+                break;
+            case 3: 
+                System.out.print("триста "); 
+                break;
+            case 4: 
+                System.out.print("четыреста "); 
+                break;
+            case 5:
+                System.out.print("пятьсот "); 
+                break;
+            case 6: 
+                System.out.print("шестьсот "); 
+                break;
+            case 7: 
+                System.out.print("семьсот "); 
+                break;
+            case 8: 
+                System.out.print("восемьсот "); 
+                break;
+            case 9: 
+                System.out.print("девятьсот "); 
+                break;
+    }
+
+        switch ((n % 100) / 10) {
+           case 2: 
+                System.out.print("двадцать "); 
+                break;
+            case 3: 
+                System.out.print("тридцать "); 
+                break;
+            case 4: 
+                System.out.print("сорок "); 
+                break;
+            case 5: 
+                System.out.print("пятьдесят "); 
+                break;
+            case 6: 
+                System.out.print("шестьдесят "); 
+                break;
+            case 7: 
+                System.out.print("семьдесят "); 
+                break;
+            case 8: 
+                System.out.print("восемьдесят "); 
+                break;
+            case 9: 
+                System.out.print("девяносто "); 
+                break;
+    }
+
+        if (n % 100 >= 10 & n % 100 < 20) {
+            
+        switch (n % 100) {
+           case 10: 
+                System.out.print("десять "); 
+                break;
+            case 11: 
+                System.out.print("одиннадцать "); 
+                break;
+            case 12: 
+                System.out.print("двенадцать "); 
+                break;
+            case 13: 
+                System.out.print("тринадцать "); 
+                break;
+            case 14: 
+                System.out.print("четырнадцать "); 
+                break;
+            case 15: 
+                System.out.print("пятнадцать "); 
+                break;
+            case 16: 
+                System.out.print("шестнадцать "); 
+                break;
+            case 17:
+                System.out.print("семнадцать "); 
+                break;
+            case 18: 
+                System.out.print("восемнадцать "); 
+                break;
+            case 19: 
+                System.out.print("девятнадцать "); 
+                break;
+        }
+    }
+        else {
+            
+        switch (n % 10) {
+            case 1: 
+                System.out.print("один\n "); 
+                break;
+            case 2: 
+                System.out.print("два\n "); 
+                break;
+            case 3: 
+                System.out.print("три\n "); 
+                break;
+            case 4: 
+                System.out.print("четыре\n "); 
+                break;
+            case 5: 
+                System.out.print("пять\n "); 
+                break;
+            case 6: 
+                System.out.print("шесть\n "); 
+                break;
+            case 7: 
+                System.out.print("семь\n "); 
+                break;
+            case 8: 
+                System.out.print("восемь\n "); 
+                break;
+            case 9: 
+                System.out.print("девять\n "); 
+                break;
+        }
+    }
+
+
+	       
+    }
+}
