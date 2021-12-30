@@ -1,0 +1,21 @@
+public class Dog {
+    public boolean bark, howl, whine;
+
+        void bark () {
+        bark = true;
+        howl = true;
+        whine = true;
+        System.out.println("Собака лает, завывает и скулит.");
+    }
+    
+    void bark(boolean bark, boolean howl, boolean whine) {
+        this.bark = bark;
+        this.howl = howl;
+        this.whine = whine;
+        if ((bark) || (howl) || (whine)) {
+            System.out.println("Слбака или лает, или завывает, или скулит - непонятно.");
+        } 
+        else
+            System.out.println("Собака молчит.");
+    }
+}
