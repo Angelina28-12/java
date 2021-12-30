@@ -1,0 +1,19 @@
+public class Constructor {
+    String title, color;
+    int num, taste;
+    
+    void Constructor () {
+       title = "merci";
+       color = "red";
+       num = 20;
+       taste = 8;
+    }
+    void Constructor(String title, String color) {
+        this.title = title;
+        this.color = color;
+    }
+    void Constructor(int num, int taste) {
+        this.num = num;
+        this.taste = taste;
+    }
+}
