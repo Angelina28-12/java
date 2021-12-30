@@ -13,7 +13,7 @@ public class Dog {
         this.howl = howl;
         this.whine = whine;
         if ((bark) || (howl) || (whine)) {
-            System.out.println("Слбака или лает, или завывает, или скулит - непонятно.");
+            System.out.println("Собака или лает, или завывает, или скулит - непонятно.");
         } 
         else
             System.out.println("Собака молчит.");
