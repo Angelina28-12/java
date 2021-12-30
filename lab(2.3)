@@ -1,0 +1,37 @@
+public class Main {
+    
+	public static void main(String[] ags) {
+	 
+        int i;
+        int[] m = new int[5];
+        for (int x = 1000; x < 9999; x++) {
+            m[1] = (x % 10);
+            m[2] = ((x / 10) % 10);
+            m[3] = ((x / 100) % 10);
+            m[4] = (x / 1000);
+
+                if (((m[1] * 10 + m[2]) * (m[3] * 10 + m[4])) == x) {
+                System.out.println(x);}
+                if (((m[1] * 10 + m[2]) * (m[4] * 10 + m[3])) == x) {
+                System.out.println(x);}
+                if (((m[1] * 10 + m[3]) * (m[2] * 10 + m[4])) == x) {
+                System.out.println(x);}
+                if (((m[1] * 10 + m[3]) * (m[4] * 10 + m[2])) == x) {
+                System.out.println(x);}
+                if (((m[1] * 10 + m[4]) * (m[2] * 10 + m[3])) == x) {
+                System.out.println(x);}
+                if (((m[1] * 10 + m[4]) * (m[3] * 10 + m[2])) == x) {
+                System.out.println(x);}
+                if (((m[2] * 10 + m[1]) * (m[3] * 10 + m[4])) == x) {
+                System.out.println(x);}
+                if (((m[2] * 10 + m[1]) * (m[4] * 10 + m[3])) == x) {
+                System.out.println(x);}
+                if (((m[2] * 10 + m[3]) * (m[4] * 10 + m[1])) == x) {
+                System.out.println(x);}
+                if (((m[2] * 10 + m[4]) * (m[3] * 10 + m[1])) == x) {
+                System.out.println(x);}
+                if (((m[3] * 10 + m[1]) * (m[4] * 10 + m[2])) == x) {
+                System.out.println(x);}
+                if (((m[3] * 10 + m[2]) * (m[4] * 10 + m[1])) == x) {
+                System.out.println(x);}
+}}}
